@@ -1,0 +1,14 @@
+streamlit
+langchain
+langchain-google-genai
+google-generativeai
+pypdf
+faiss-cpu
+langchain-community
+langchain-core
+langchain-text-splitters
+ragas
+datasets
+python-dotenv
+langgraph
+neo4j 

@@ -1,0 +1,23 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/ 
