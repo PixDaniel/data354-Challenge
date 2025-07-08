@@ -29,25 +29,8 @@ def load_models():
 # --- Fonctions utilitaires ---
 def get_best_model():
     """Récupère le meilleur modèle d'après les résultats d'évaluation."""
-    try:
-        results_path = "src/evaluation/evaluation_results.csv"
-        if os.path.exists(results_path):
-            df = pd.read_csv(results_path, index_col=0)
-            best_model = df.index[0]
-            # Conversion du nom du modèle au format du dictionnaire models
-            if best_model == "Baseline RAG":
-                return "Baseline RAG"
-            elif best_model == "Corrective RAG":
-                return "Corrective RAG (CRAG)"
-            elif best_model == "Graph RAG":
-                return "Graph RAG"
-            elif best_model == "Agentic RAG":
-                return "Agentic RAG"
-    except Exception as e:
-        st.warning(f"Impossible de charger les résultats d'évaluation: {e}")
-    
-    # Par défaut, on retourne l'AgenticRAG qui est généralement le plus performant
-    return "Agentic RAG"
+    # Retourne directement le CRAG comme modèle par défaut
+    return "Corrective RAG (CRAG)"
 
 # --- Configuration de la page Streamlit ---
 st.set_page_config(

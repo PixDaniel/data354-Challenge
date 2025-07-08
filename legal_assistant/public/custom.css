@@ -1,0 +1,161 @@
+/* Custom styles for our Chainlit app */
+
+/* Main container */
+.cl-main {
+    background-image: linear-gradient(to bottom right, #f9fafb, #e5e7eb);
+}
+
+/* Chat container */
+.cl-chat-container {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Chat messages */
+.cl-message-container {
+    padding: 8px 12px;
+    margin: 8px 0;
+    transition: all 0.3s ease;
+}
+
+.cl-message-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* User messages */
+.cl-message-container[data-author="You"] {
+    background-color: #eff6ff;
+    border-radius: 18px 18px 4px 18px;
+}
+
+/* Assistant messages */
+.cl-message-container:not([data-author="You"]) {
+    background-color: #f3f4f6;
+    border-radius: 18px 18px 18px 4px;
+    border-left: 3px solid #2563eb;
+}
+
+/* Avatars */
+.cl-avatar-container {
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.cl-avatar-container:hover {
+    transform: scale(1);
+}
+
+/* Input box */
+.cl-chat-input-container {
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.cl-chat-input-container:focus-within {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+/* Send button */
+.cl-send-button {
+    background: linear-gradient(45deg, #1e3a8a 0%, #3b82f6 100%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.cl-send-button:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 2px 10px rgba(59, 130, 246, 0.5);
+}
+
+/* Steps */
+.cl-step-container {
+    border-radius: 8px;
+    background-color: #f8fafc;
+    border-left: 3px solid #3b82f6;
+    padding: 8px;
+    margin: 8px 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Text elements */
+.cl-text-element {
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Sidebar */
+.cl-sidebar {
+    background-color: #f8fafc;
+    border-right: 1px solid #e5e7eb;
+}
+
+/* Actions */
+.cl-actions {
+    gap: 8px;
+}
+
+.cl-action {
+    background: linear-gradient(45deg, #1e3a8a 0%, #3b82f6 100%);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.cl-action:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+}
+
+/* Logo */
+.cl-logo {
+    transition: all 0.3s ease;
+}
+
+.cl-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cl-message-container {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Typography */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c5c5c5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3b82f6;
+} 

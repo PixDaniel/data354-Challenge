@@ -1,0 +1,73 @@
+# Chainlit configuration file
+
+# Interface customization
+interface:
+  # Page title
+  page_title: "Assistant Juridique - Droit du Travail Ivoirien"
+
+  # App favicon path (local file path or URL)
+  favicon: "https://cdn-icons-png.flaticon.com/512/1995/1995539.png"
+
+  # CSS file path
+  custom_css: "/public/custom.css"
+
+  # Display settings
+  default_expanded_messages: True
+  hide_cot: False # We want to show chain-of-thought
+
+# Features
+features:
+  # Multi-modal settings
+  multi_modal: True
+
+  # Zero-shot prompt settings
+  prompt_playground:
+    enabled: True
+
+  # Audio messages
+  audio_messages:
+    enabled: False
+    speech_to_text: False
+
+  # Code execution
+  code_execution:
+    enabled: False
+    allow_code_evaluation: False
+
+# Project settings
+project:
+  # Project name
+  name: "Assistant Juridique"
+
+  # Project description
+  description: "Un assistant conversationnel spécialisé dans le droit du travail ivoirien"
+
+  # User avatar settings
+  user_avatar: "https://cdn-icons-png.flaticon.com/512/1738/1738691.png"
+
+  # GitHub repository (optional)
+  github: ""
+
+  # Enable cloud hosting (optional)
+  enable_cloud_hosting: False
+
+# Completion settings
+completion:
+  # Allow Human feedback
+  enable_human_feedback: True
+
+  # Maximum tokens
+  max_tokens: 4096
+
+  # Temperature
+  temperature: 0.0
+
+# Processing settings
+processing:
+  # Whether to show the "cloud processing" banner (PRO feature)
+  cloud_processing: False
+
+# OAuth settings (if needed)
+oauth:
+  # Whether to enable OAuth
+  enable: False
