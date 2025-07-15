@@ -225,5 +225,5 @@ if question:
             st.error(f"Une erreur est survenue: {e}")
 
 # --- Pied de page ---
-st.markdown("<div class='footer'>© 2023 - Assistant Juridique - Droit du Travail Ivoirien</div>", unsafe_allow_html=True)
+st.markdown("<div class='footer'>© 2025 - Assistant Juridique - Droit du Travail Ivoirien</div>", unsafe_allow_html=True)
 st.markdown("<div class='footer'>Ce projet a été realisé par Daniel Grah pour le challenge de Data354 </div>", unsafe_allow_html=True)  
